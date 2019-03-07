@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            #sendItem {
+                background-color: red;
+                width: 200px;
+                margin: 30px;
+                padding: 30px;
+
+                transition:  3s all;
+                left: 0;
+            }
+            .leftTrans {
+                left: 3000px !important;
+                position: absolute; 
+            }
+        </style>
+
+        <script type="text/javascript">
+        function checkValidation() {
+            var password = '1234';
+            var password = document.getElementById('password').value;
+            if (password != '1234') {
+                alert('Caution!')
+            } else {
+                //success
+                var y = document.getElementById('sendItem'); 
+                y.className = 'letfTrans';
+            }
+        }
+        </script>
+    </head>
+
+    <body>
+        
+<div id="sendItem">
+    <form>
+        Password: <br> <br>
+        <input type="password"  id="password" placeholder="Password"> <br> <br>
+        <input type="button" id="submit" value="Send!" onclick="checkValidation();">
+    </form>
+</div>
+    </body>
+</html>

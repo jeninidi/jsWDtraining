@@ -175,4 +175,6 @@ return comment.postId === post.id
  postForComment(posts, comment);
 
  //ex 13
-   
+   var computers = [
+       name: 'Apple', 
+   ] 
