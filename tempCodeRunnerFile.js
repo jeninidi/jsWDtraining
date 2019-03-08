@@ -1,16 +1,5 @@
-var john = 80;
-var nick = 45;
-var lowLimit = 51;
-
-if (john > lowLimit && nick > lowLimit) {
-    console.log('both students passed');
-} else if (john < lowLimit || nick > lowLimit) {
-    console.log('one student passed');
-} else {
-    
-    if (nick > lowLimit) {
-        console.log('nick passed');
-    } else {
-        console.log('john passed');
-    }
-}
+var date = new Date ();
+var x = date.setFullYear(1996);
+        date.setMonth(9);
+        date.setDate(22);
+console.log(x);
